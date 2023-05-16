@@ -8,7 +8,7 @@ df = pd.DataFrame(data)
 fig, ax = plt.subplots()
 
 # get a color map
-cmap = get_cmap("tab20")  # type: matplotlib.colors.ListedColormap
+cmap = get_cmap("tab20", 28)  # type: matplotlib.colors.ListedColormap
 colors = cmap.colors  # type: list
 
 ips = df['ip']
@@ -19,5 +19,5 @@ ax.set_ylabel('Mean RTT in ms')
 ax.set_title('Mean RTT for each hop between ips')
 
 
-plt.xticks(rotation=90)
+plt.xticks(rotation=15)
 plt.show()

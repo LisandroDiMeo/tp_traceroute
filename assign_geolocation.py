@@ -19,7 +19,7 @@ with geoip2.database.Reader('geo.mmdb') as reader:
         split_src = src_and_target.split("-")
         ip = split_src[0]
         target = split_src[1]
-        if ip == "192.168.0.1":
+        if ip == "192.168.100.1" or ip == "100.65.192.3" or ip == "10.2.186.129" or ip == "10.0.1.96" or ip == "10.2.186.125":
             lat = "-34.58881517251069"
             lng = "-58.420968605233796"
             location_dict["source_and_target"].append(src_and_target)
